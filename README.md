@@ -1,5 +1,5 @@
-# node-recommender
-A NodeJS REST Api for content based and user-based collaborative recommendation
+# node-recommender(WIP)
+A NodeJS REST Api for content based and user-based collaborative filtering recommendation
 
 Steps to run:
 
