@@ -1,7 +1,7 @@
 const express = require('express');
 const router = express.Router();
 const ContentBasedRecommender = require('content-based-recommender');
-const promisePool = require('../../db');
+const promisePool = require('../../config/db');
 
 router.get('/:id', (req, res) => {
     async function main() {

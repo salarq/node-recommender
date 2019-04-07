@@ -1,7 +1,7 @@
 const express = require('express');
 const router = express.Router();
 var g = require('ger');
-const promisePool = require('../../db');
+const promisePool = require('../../config/db');
 
 router.get('/:id/:prodid', (req, res) => {
     var esm = new g.MemESM();
