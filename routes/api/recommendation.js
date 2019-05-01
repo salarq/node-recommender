@@ -11,7 +11,7 @@ router.get('/:id', (req, res) => {
         const [rows, fields] = await promisePool.query("SELECT product_id, product_name, brand_name FROM products INNER JOIN brands ON products.brand_id=brands.brand_id;");
         var cont;
         rows.forEach((rows) => {
-            cont = rows.brand_name + " " + rows.product_name;
+            cont = rows.product_name;
             document.push({ id: rows.product_id, content: cont });
             // console.log(`${rows.product_id} is in ${rows.product_name}`);
         });

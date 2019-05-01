@@ -11,7 +11,7 @@ router.get('/:id', (req, res) => {
         const [rowss, fieldss] = await promisePool.query("SELECT DISTINCT products.product_id, products.product_name, shop.shop_id, brands.brand_id, brands.brand_name FROM products INNER JOIN product_shop ON Products.product_id = product_shop.product_id INNER JOIN shop ON product_shop.shop_id = shop.shop_id inner join brands on brands.brand_id = products.brand_id WHERE products.product_id = ? limit 1;", id);
         // console.log(rowss);
         rowss.forEach(gdgdf => {
-            cont = gdgdf.brand_name + " " + gdgdf.product_name;
+            cont = gdgdf.product_name;
             document.push({ id: gdgdf.product_id, content: cont });
             console.log(`${gdgdf.product_id} is in ${gdgdf.product_name}`);
         });
