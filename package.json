@@ -1,5 +1,5 @@
 {
-  "name": "mysqlsample",
+  "name": "node-recommender",
   "version": "1.0.0",
   "description": "App for sql",
   "main": "app.js",
